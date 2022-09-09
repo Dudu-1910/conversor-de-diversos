@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Conversor de diversos</title>
+</head>
+
+<body>
+  <section class="container">
+
+    <div class="cabecalho">
+      <header>
+        <h1 class="titulo-principal">
+          Bem vindo ao conversor!
+        </h1>
+
+        <h3 class="subtitulo-principal">
+          Conversores para moedas, temperatura e distâcia em Ano-luz.
+        </h3>
+      </header>
+    </div>
+
+    <div class="conversor-de-moedas">
+      <h4 class="titulo-conversor">
+        Conversor de moedas
+      </h4>
+      <p class="subtitulo-conversor">
+        Descubra os valores em real R$
+      </p>
+      <label for="moeda">
+        Selecione a moeda e insira o valor
+      </label><br>
+      <select name="moedas" id="moedas">
+        <option value="5.21">Dólar</option>
+        <option value="5.21">Euro</option>
+        <option value="6">Libra Esterlina</option>
+        <option value="0.036">Iene</option>
+        <option value="100765.37">Bitcoin</option>
+        <option value="8527.70">Etherum</option>
+      </select>
+      <input type="number" id="valor" size="2" />
+      <button type="submit" onclick="converterMoeda()" class="btn-converter"> Converter </button>
+      <h2 id="valorConvertido"></h2>
+    </div>
+
+    <div class="conversor-temperatura">
+      <h4 class="titulo-conversor">
+        Conversor de temperatura
+      </h4>
+      <p class="subtitulo-conversor">
+        Descubra a temperatura em graus Celsius
+      </p>
+      <label for="temperatura">
+        Selecione a temperatura e insira o valor
+      </label><br>
+      <select id="temperaturas">
+        <option value="(dinamico-32)/1.8">Fahrenheit</option>
+        <option value="273-dinamico">Kelvin</option>
+      </select>
+      <input type="number" id="temperatura" size="2" />
+      <button type="submit" onclick="converterTemperatura()" class="btn-converter"> Converter </button>
+      <h2 id="valorTemperatura"></h2>
+    </div>
+
+    <div class="conversor-distancia">
+      <h4 class="titulo-conversor">
+        Conversor de quilômetros para Ano-luz
+      </h4>
+      <p class="subtitulo-conversor">
+        Descubra a distancia em Ano-luz
+      </p>
+      <label for="quilometro">
+        Insira a quilometragem:
+      </label><br>
+      <input type="number" id="quilometro" size="2" />
+      <button type="submit" onclick="converterKm()" class="btn-converter"> Converter </button>
+      <h2 id="valorAnoLuz"></h2>
+    </div>
+
+    <div>
+      <footer>
+        <p class="rodape">Desenvolvido por Eduardo Henrique | 2022 <br><br> Todos os direitos reservados</p>
+      </footer>
+    </div>
+    
+  </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

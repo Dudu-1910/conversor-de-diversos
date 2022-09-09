@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 400px;
+  background: url('https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif') fixed no-repeat #000;
+  background-size: cover;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.titulo-principal {
+  color: #fff;
+  font-size: 1.8em;
+  margin: 0 0 5px;
+}
+
+.subtitulo-principal{
+  color: #fff;
+  font-size: 1.6em;
+  margin-top: 30px;
+}
+
+.titulo-conversor{
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+
+.subtitulo-conversor {
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+select {
+  padding: 4px;
+  margin: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input {
+  margin: 12px;
+  padding: 4px;
+  border-radius: 7px;
+}
+
+label {
+  color: white;
+  padding: 50px;
+}
+
+.btn-converter {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn-converter:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+footer {
+  display: block;
+  margin-top: 50px;
+  bottom: 0;
+}
+
+.rodape {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 40px;
+}
